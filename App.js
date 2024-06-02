@@ -3,8 +3,8 @@ const parent = React.createElement(
     {id: "parent"},
     React.createElement(
         "div",
-        {id:"child"},
-        React.createElement("h1", {}, "This is my h1 heading")
+        {id:"child"},[
+        React.createElement("h1", {}, "This is my h1 heading"),React.createElement("h2", {}, "This is my h2 heading")]
     )
 );
 console.log(parent);
